@@ -20,13 +20,13 @@ class Tema:
 
         f.close
 
-    def consultar_por_id(self):
+    def consultar_por_id(self,id_tema):
         f = open("c:/Archivos/Clonados/EQUIPO_3/Tema.txt",encoding="utf8")
 
         print(f"{'ID Tema':<10}{'Tema':>10}")
         for linea in f:
             datos = linea.strip().split('|')
-            if int(datos[0]) == 2:
+            if int(datos[0]) == id_tema:
                 print(f'{int(datos[0]):<15}{datos[1]:>10}')
 
         f.close
