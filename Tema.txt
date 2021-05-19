@@ -1,0 +1,6 @@
+1 | Programacion
+2 | Ingles
+3 | Base de Datos
+4 | Matematicas
+5 | Sistemas Operativos
+6 | Redes y Comunicaciones
