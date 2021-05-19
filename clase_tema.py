@@ -1,14 +1,32 @@
 class Tema:
-    def __init__(self,id_tema,nombre):
+    def __init__(self,id_tema,tema):
         self.__id_tema = id_tema
-        self.__nombre = nombre
+        self.__tema = tema
     
-    def guardar(self):
-        lista = [1,"Programacion"]
-        f = open("./EQUIPO_3/archivos_texto/Tema.txt","w",enconding="utf8")
+    def guardar(self,id_tema,tema):
+        lista = [id_tema,"|", tema]
+        f = open("c:/Archivos/Clonados/EQUIPO_3/Tema.txt","a",enconding="utf8")
         for numero in lista:
              f.write(str(numero)+'\n')
         f.close
 
     def consultar_todo(self):
-        print(f'Informacion del tema; id_tema:{self.__id_tema}, nombre:{self.__nombre}')
+        f = open("c:/Archivos/Clonados/EQUIPO_3/Tema.txt",encoding="utf8")
+
+        print(f"{'ID Tema':<10}{'Tema':>10}")
+        for linea in f:
+            datos = linea.strip().split('|')
+            print(f'{int(datos[0]):<15}{datos[1]:>10}')
+
+        f.close
+
+    def consultar_por_id(self):
+        f = open("c:/Archivos/Clonados/EQUIPO_3/Tema.txt",encoding="utf8")
+
+        print(f"{'ID Tema':<10}{'Tema':>10}")
+        for linea in f:
+            datos = linea.strip().split('|')
+            if int(datos[0]) == 2:
+                print(f'{int(datos[0]):<15}{datos[1]:>10}')
+
+        f.close
