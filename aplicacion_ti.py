@@ -23,3 +23,8 @@ print("Seleccione una opcion.")
 print("1. Guardar")
 print("2. Consultar todo")
 print("3. Consultar por ID")
+
+resp2 = int(input())
+
+if resp1.upper() == "A":
+    if resp2 == 1:
