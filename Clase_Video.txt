@@ -1,0 +1,6 @@
+1 | Introduccion a la programacio | www.youtube.com/Introduccionalaprogramacio | 19/05/19
+2 | Ingles Avanzado | www.youtube.com/InglesAvanzado | 14/03/19
+3 | Manejo de bases de datos | www.youtube.com/Manejodebasesdedatos | 25/12/20
+4 | Matematicas para la computacion | www.youtube.com/Matematicasparalacomputacion | 31/06/20
+5 | Windows y Linux | www.youtube.com/WindowsyLinux | 02/09/21
+6 | Circuitos de Redes | www.youtube.com/CircuitosdeRedes | 13/07/21
