@@ -17,3 +17,9 @@ print("f. Empleados")
 print("------------------------------")
 
 resp1 = str(input())
+
+print("------------------------------")
+print("Seleccione una opcion.")
+print("1. Guardar")
+print("2. Consultar todo")
+print("3. Consultar por ID")
