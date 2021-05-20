@@ -43,3 +43,8 @@ if resp1.upper() == "A":
         nuevoTema.guardar()
     elif resp2 == 2:
         clasePruebaTema.consultar_todo()
+    elif resp2 == 3:
+        print("Ingrese el ID que desa consultar")
+        idConsulta = int(input())
+        clasePruebaTema.consultar_por_id(idConsulta)
+    else:
