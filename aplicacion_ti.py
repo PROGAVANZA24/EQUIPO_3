@@ -5,6 +5,8 @@ from Curso_Tema import Curso_Tema
 from clase_curso import Curso
 from clase_empleado import Empleado
 
+clasePruebaTema = Tema("","")
+clasePruebaClsVid = Clase_Video("","","","")
 print("------------------------------")
 print("Bienvenido al Menu Principal!")
 print("Seleccione la opcion deseada.")
@@ -33,3 +35,6 @@ if resp1.upper() == "A":
         print("Ingrese el ID del tema nuevo")
         idTema = int(input())
         nuevoTema = Tema(idTema,nomTema)
+        nuevoTema.guardar()
+    elif resp2 == 2:
+        clasePruebaTema.consultar_todo()
