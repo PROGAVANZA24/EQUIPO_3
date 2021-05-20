@@ -6,7 +6,12 @@ from clase_curso import Curso
 from clase_empleado import Empleado
 
 clasePruebaTema = Tema("","")
-clasePruebaClsVid = Clase_Video("","","","")
+clasePruebaVideo = Clase_Video("","","","")
+clasePruebaTemaVideo = Curso_Tema_Video("","","")
+clasePruebaCursoTema = Curso_Tema("","","")
+clasePruebaCurso = Curso("","","")
+clasePruebaEmpleado = Empleado("","","")
+
 print("------------------------------")
 print("Bienvenido al Menu Principal!")
 print("Seleccione la opcion deseada.")
