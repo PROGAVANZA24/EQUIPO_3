@@ -1,0 +1,6 @@
+1 | Mauricio Olvera | San Dionisio 3193
+2 | Eduardo Torres | San Juan 1387
+3 | Scarlet Vazquez | Rio de Janeiro 167
+4 | Brandon Rubio | San Jose 3247
+5 | Misael Lopez | Los Angeles 874
+6 | Angel Chapa | Buenos Aires 378
