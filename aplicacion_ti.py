@@ -8,3 +8,8 @@ from clase_empleado import Empleado
 print("------------------------------")
 print("Bienvenido al Menu Principal!")
 print("Seleccione la opcion deseada.")
+print("a. Tema")
+print("b. Video")
+print("c. Curso Tema Video")
+print("d. Curso Tema")
+print("e. Curso")
