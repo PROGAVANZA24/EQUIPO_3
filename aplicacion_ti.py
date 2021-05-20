@@ -28,3 +28,8 @@ resp2 = int(input())
 
 if resp1.upper() == "A":
     if resp2 == 1:
+        print("Ingrese el nombre del tema nuevo")
+        nomTema = str(input())
+        print("Ingrese el ID del tema nuevo")
+        idTema = int(input())
+        nuevoTema = Tema(idTema,nomTema)
