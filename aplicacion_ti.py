@@ -44,7 +44,28 @@ if resp1.upper() == "A":
     elif resp2 == 2:
         clasePruebaTema.consultar_todo()
     elif resp2 == 3:
-        print("Ingrese el ID que desa consultar")
+        print("Ingrese el ID que desea consultar")
         idConsulta = int(input())
         clasePruebaTema.consultar_por_id(idConsulta)
     else:
+        print("Opcion invalida")
+elif resp1.upper() == "B":
+    if resp2 == 1:
+        print("Ingrese el nombre del video nuevo")
+        nomVideo = str(input())
+        print("Ingrese el ID del video nuevo")
+        idVideo = int(input())
+        print("Ingrese la URL del nuevo video")
+        urlVideo = str(input())
+        print("Ingrese la fecha de publicacion (dd/mm/aa)")
+        fechaVideo = str(input())
+        nuevoVideo = Clase_Video(idVideo,nomVideo,urlVideo,fechaVideo)
+        nuevoVideo.guardar()
+    elif resp2 == 2:
+        clasePruebaVideo.consultar_todo()
+    elif resp2 == 3:
+        print("Ingrese el ID que desea consultar")
+        idConsulta = int(input())
+        clasePruebaVideo.consultar_por_id(idConsulta)
+    else:
+        print("Opcion invalida")
