@@ -6,7 +6,7 @@ class Curso_Tema_Video:
 
     def guardar(self,id_CTV, id_CT, id_video):
         lista = [id_CTV,"|", id_CT,"|", id_video]
-        f = open("c:/Archivos/Clonados/EQUIPO_3/clase_tema_video.txt","a",enconding="utf8")
+        f = open("c:/Archivos/Clonados/EQUIPO_3/clase_tema_video.txt","a",encoding="utf8")
         for numero in lista:
              f.write(str(numero)+'\n')
         f.close

@@ -5,7 +5,7 @@ class Tema:
     
     def guardar(self,id_tema,tema):
         lista = [id_tema,"|", tema]
-        f = open("c:/Archivos/Clonados/EQUIPO_3/Tema.txt","a",enconding="utf8")
+        f = open("c:/Archivos/Clonados/EQUIPO_3/Tema.txt","a",encoding="utf8")
         for numero in lista:
              f.write(str(numero)+'\n')
         f.close

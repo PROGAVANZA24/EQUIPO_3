@@ -6,7 +6,7 @@ class Curso:
 
     def guardar(self,id_curso, descripcion, empleado):
         lista = [id_curso,"|", descripcion,"|", empleado]
-        f = open("c:/Archivos/Clonados/EQUIPO_3/clase_curso.txt","a",enconding="utf8")
+        f = open("c:/Archivos/Clonados/EQUIPO_3/clase_curso.txt","a",encoding="utf8")
         for numero in lista:
              f.write(str(numero)+'\n')
         f.close

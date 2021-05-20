@@ -40,7 +40,7 @@ if resp1.upper() == "A":
         print("Ingrese el ID del tema nuevo")
         idTema = int(input())
         nuevoTema = Tema(idTema,nomTema)
-        nuevoTema.guardar()
+        nuevoTema.guardar(idTema,nomTema)
     elif resp2 == 2:
         clasePruebaTema.consultar_todo()
     elif resp2 == 3:
@@ -60,7 +60,7 @@ elif resp1.upper() == "B":
         print("Ingrese la fecha de publicacion (dd/mm/aa)")
         fechaVideo = str(input())
         nuevoVideo = Clase_Video(idVideo,nomVideo,urlVideo,fechaVideo)
-        nuevoVideo.guardar()
+        nuevoVideo.guardar(idVideo,nomVideo,urlVideo,fechaVideo)
     elif resp2 == 2:
         clasePruebaVideo.consultar_todo()
     elif resp2 == 3:
@@ -72,13 +72,13 @@ elif resp1.upper() == "B":
 elif resp1.upper() == "C":
     if resp2 == 1:
         print("Ingrese el ID del Curso Tema Video nuevo")
-        idCTV = str(input())
+        idCTV = int(input())
         print("Ingrese el ID del Curso Tema nuevo")
-        idCT = str(input())
+        idCT = int(input())
         print("Ingrese el ID del Video nuevo")
-        idV = str(input())
+        idV = int(input())
         nuevoCTV = Curso_Tema_Video(idCTV,idCT,idV)
-        nuevoCTV.guardar()
+        nuevoCTV.guardar(idCTV,idCT,idV)
     elif resp2 == 2:
         clasePruebaTemaVideo.consultar_todo()
     elif resp2 == 3:
@@ -90,13 +90,13 @@ elif resp1.upper() == "C":
 elif resp1.upper() == "D":
     if resp2 == 1:
         print("Ingrese el ID del Curso Tema nuevo")
-        idCursoTema = str(input())
+        idCursoTema = int(input())
         print("Ingrese el ID del Curso nuevo")
-        idCurso = str(input())
+        idCurso = int(input())
         print("Ingrese el ID del Tema nuevo")
-        idT = str(input())
-        nuevoCursoTema = Curso_Tema_Video(idCursoTema,idCurso,idT)
-        nuevoCursoTema.guardar()
+        idT = int(input())
+        nuevoCursoTema = Curso_Tema(idCursoTema,idCurso,idT)
+        nuevoCursoTema.guardar(idCursoTema,idCurso,idT)
     elif resp2 == 2:
         clasePruebaCursoTema.consultar_todo()
     elif resp2 == 3:
@@ -105,3 +105,41 @@ elif resp1.upper() == "D":
         clasePruebaCursoTema.consultar_por_id(idConsulta)
     else:
         print("Opcion invalida")
+elif resp1.upper() == "E":
+    if resp2 == 1:
+        print("Ingrese el ID del Curso nuevo")
+        idCurso = int(input())
+        print("Ingrese la descripcion del curso nuevo")
+        descCurso = str(input())
+        print("Ingrese el ID del empleado nuevo")
+        idEmp = int(input())
+        nuevoCurso = Curso(idCurso,descCurso,idEmp)
+        nuevoCurso.guardar(idCurso,descCurso,idEmp)
+    elif resp2 == 2:
+        clasePruebaCurso.consultar_todo()
+    elif resp2 == 3:
+        print("Ingrese el ID que desea consultar")
+        idConsulta = int(input())
+        clasePruebaCurso.consultar_por_id(idConsulta)
+    else:
+        print("Opcion invalida")
+elif resp1.upper() == "F":
+    if resp2 == 1:
+        print("Ingrese el ID del Empleado nuevo")
+        idEmpleado = int(input())
+        print("Ingrese el nombre del empleado nuevo")
+        nomEmpleado = str(input())
+        print("Ingrese la direccion del empleado nuevo")
+        direcEmpleado = str(input())
+        nuevoEmpleado = Empleado(idEmpleado,nomEmpleado,direcEmpleado)
+        nuevoEmpleado.guardar(idEmpleado,nomEmpleado,direcEmpleado)
+    elif resp2 == 2:
+        clasePruebaEmpleado.consultar_todo()
+    elif resp2 == 3:
+        print("Ingrese el ID que desea consultar")
+        idConsulta = int(input())
+        clasePruebaEmpleado.consultar_por_id(idConsulta)
+    else:
+        print("Opcion invalida")
+
+print("Gracias por tu preferencia!")
