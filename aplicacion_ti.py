@@ -69,3 +69,21 @@ elif resp1.upper() == "B":
         clasePruebaVideo.consultar_por_id(idConsulta)
     else:
         print("Opcion invalida")
+elif resp1.upper() == "C":
+    if resp2 == 1:
+        print("Ingrese el ID del Curso Tema Video nuevo")
+        idCTV = str(input())
+        print("Ingrese el ID del Curso Tema nuevo")
+        idCT = str(input())
+        print("Ingrese el ID del Video nuevo")
+        idV = str(input())
+        nuevoCTV = Curso_Tema_Video(idCTV,idCT,idV)
+        nuevoCTV.guardar()
+    elif resp2 == 2:
+        clasePruebaTemaVideo.consultar_todo()
+    elif resp2 == 3:
+        print("Ingrese el ID que desea consultar")
+        idConsulta = int(input())
+        clasePruebaTemaVideo.consultar_por_id(idConsulta)
+    else:
+        print("Opcion invalida")
